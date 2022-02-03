@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #1c2325;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.layout
+{
+
+}
+/* Header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+
+}
+
+.logo, .menu_item, .toggleMenu{
+    color: #f1f1f1;
+}
+
+.logo{
+font-size: 1.75em;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .menu_item{
+    padding: 5px 15px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .menu_item::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background: #00ff15;
+    transition: width 0.3s ease-out;
+}
+
+.menu .menu_item:hover::before{
+  width: 100%;
+}
+
+.menu .menu_item a{
+    color: #f1f1f1;
+}
+
+.toggleMenu{
+    font-size: 1.75em;
+    cursor: pointer;
+    display: none !important;
+}
+
+.btn_register{
+    padding: 10px 20px;
+    background: #f1f1f1;
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 2px;
+    border-bottom-right-radius: 20px;
+}
