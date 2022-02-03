@@ -10,6 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #1c2325;
     width: 100vw;
+    overflow: hidden;
 }
 
 a{
@@ -64,7 +65,7 @@ font-size: 1.75em;
     width: 0%;
     height: 2px;
     border-radius: 5px;
-    background: #00ff15;
+    background: #b700ff;
     transition: width 0.3s ease-out;
 }
 
@@ -92,3 +93,64 @@ font-size: 1.75em;
     border-radius: 2px;
     border-bottom-right-radius: 20px;
 }
+
+.closeBtn{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+
+    header{
+        padding: 20px 40px;
+        position: relative;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background: rgba(0, 0, 0, .5);
+        width: 50%;
+        height: 100vh;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .menu.show{
+        right: 0%;
+    }
+
+    .menu .menu_item{
+        margin: 20px 0;
+    }
+
+    .menu .menu_item a{
+        font-size: 20px;
+    }
+
+    .toggleMenu{
+        display: block !important;
+    }
+
+    .closeBtn{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 10%;
+        left: 5%;
+        background: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .closeBtn i{
+        font-size: 20px;
+        animation: spin 0.5s infinite;
+    }
+}
+
