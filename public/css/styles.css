@@ -10,7 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #1c2325;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a{
@@ -31,7 +31,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 40px 80px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
 }
 
 .logo, .menu_item, .toggleMenu{
@@ -96,6 +99,165 @@ font-size: 1.75em;
 
 .closeBtn{
     display: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bgvideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 120px;
+    z-index: 50;
+}
+
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p{
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.content p span{
+    font-size: 2.5rem;
+    color: #b700ff;
+}
+
+.content .dropIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10%;
+    animation: upSide 1.2s infinite;
+    transition: transform 0.3 ease-in-out;
+}
+
+.content .dropIcon i{
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.infocontent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.infocontent p{
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.infocontent p span{
+    display: block;
+    font-size: 3rem;
+}
+
+.infocontent .icons{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.infocontent .icons i{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    border: 1px solid #888;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.infocard{
+    width: 100%;
+    margin-top: 80px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.infocard::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 240px;
+    min-width: 240px;
+    height: 300px;
+    background: #00ff15;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+
+@keyframes upSide{
+    0%{
+        transform: translateY(0px);
+    }  
+    50%{
+        transform: translateY(30px);
+    } 
+    100%{
+        transform: translateY(0px);
+    }   
 }
 
 @media screen and (max-width:600px){
