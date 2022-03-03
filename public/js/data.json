@@ -1,0 +1,49 @@
+[
+    {
+        "id" : 1,
+        "name" : "Double Bar tf66t6",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "Nice Double Bar"
+    },
+
+    {
+        "id" : 2,
+        "name" : "Main Hall",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "New main Hall"
+    },
+
+    {
+        "id" : 3,
+        "name" : "Main Hall",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "New main Hall"
+    },
+
+    {
+        "id" : 4,
+        "name" : "Main Hall",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "New main Hall"
+    },
+
+    {
+        "id" : 5,
+        "name" : "Main Hall",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "New main Hall"
+    },
+
+    {
+        "id" : 6,
+        "name" : "Main Hall",
+        "imgSrc" : "../img/ingobg.jpg",
+        "price" : 60,
+        "description" : "New main Hall"
+    }
+]
